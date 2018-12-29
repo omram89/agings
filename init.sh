@@ -152,6 +152,16 @@ echo
 echo "Inodes Used: $INODE_CNTR"
 echo
 sleep 2
+
+## Increase INODE CNT by 20%
+
+echo "Executing: $abshere/inc_inode_cnt.sh "
+echo
+. $abshere/inc_inode_cnt.sh $INODE_CNTR
+
+
+
+sleep 2
 ## TODO Call to second phase -- Pass INODE_CNTR as input
 echo "Executing: $abshere/inc_size.sh "
 echo
