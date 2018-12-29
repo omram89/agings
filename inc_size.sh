@@ -35,8 +35,8 @@ sleep 5
 DEV_DIR=/dev/zero
 DELETE_CNTR=0
 CREATE_CNTR=0
-NUM_THREE=3
-NUM_FIVE=20
+NUM_THREE=3        ## Number of cycles to create a file
+NUM_FIVE=500       ## Number of cycles to delete a file
 while true
 do
     for dir in $MNT_PNT/*/
